@@ -31,13 +31,13 @@ for number in almost_numbers:
 print(numbers)
 
 # TODO: use a list comprehension to create a list of all of the full_names in lowercase
-lowercase_full_names = []
+lowercase_full_names = [name.lower() for name in full_names]
 
-for name in full_names:
-    first_element = name.split()[0][0]
-    second_element = name.split()[1][0]
-    if first_element.islower() and second_element.islower() is True:
-        lowercase_full_names.append(name)
+# for name in full_names:
+#     first_element = name.split()[0][0]
+#     second_element = name.split()[1][0]
+#     if first_element.islower() and second_element.islower() is True:
+#         lowercase_full_names.append(name)
 print(lowercase_full_names)
 
 

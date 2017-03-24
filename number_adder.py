@@ -1,12 +1,11 @@
 
 
 numbers = []
-count = 0
 
-while count < 5:
+
+for i in range(5):
     input_numbers = int(input("Number: "))
     numbers.append(input_numbers)
-    count += 1
 
 print("The first number is {}".format(numbers[0]))
 print("The last number is {}".format(numbers[-1]))
